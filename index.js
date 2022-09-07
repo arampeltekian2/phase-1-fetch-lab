@@ -13,5 +13,10 @@ function renderBooks(books) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  fetchBooks();
-});
+  fetchBooks('https://anapioficeandfire.com/api/books')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+   
+  })})
